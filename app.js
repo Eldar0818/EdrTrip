@@ -28,6 +28,7 @@ window.addEventListener('scroll', ()=> {
 let closeBtn = document.getElementById('close-btn')
 let menuBtn = document.getElementById('menu-btn')
 let menuCard = document.getElementById('menu-card')
+let menulinks = document.querySelectorAll('.menulink')
 
 menuBtn.addEventListener('click', ()=> {
     menuCard.classList.toggle('active')
@@ -35,6 +36,12 @@ menuBtn.addEventListener('click', ()=> {
 
 closeBtn.addEventListener('click', ()=> {
     menuCard.classList.remove('active')
+})
+
+menulinks.forEach(link=> {
+    link.addEventListener('click',()=> {
+        menuCard.classList.remove('active')
+    })
 })
 
 function menuCardInWidth () {
@@ -126,25 +133,25 @@ let blogs = [
         id: 1,
         customer: "Liam",
         avatar: "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, error. Totam, excepturi modi. Molestias recusandae dolorem minus facilis modi ullam."
+        content: "I really didn't expect my trip with this travel agency to turn out so well. Everything was so well arranged, I will choose this company again without hesitation on my next trip."
     },
     {
         id: 2,
         customer: "Olivia",
         avatar: "https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, error. Totam, excepturi modi. Molestias recusandae dolorem minus facilis modi ullam."
+        content: "I absolutely love the tourist spots they choose to take me to because those are the places I want to be. Really regret not discovering this travel agency sooner."
     },
     {
         id: 3,
         customer: "Noah",
         avatar: "https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, error. Totam, excepturi modi. Molestias recusandae dolorem minus facilis modi ullam."
+        content: "A true travel agency should be like them, they are very good at their business. Once again I realized what a difference in quality is, great job!"
     },
     {
         id: 4,
         customer: "Emma",
         avatar: "https://images.pexels.com/photos/1542085/pexels-photo-1542085.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, error. Totam, excepturi modi. Molestias recusandae dolorem minus facilis modi ullam."
+        content: "I booked my previous trip for my friends and this travel agency really didn't let me down. My friends appreciate and praise me for booking them such a great trip, and I thank you here too."
     },
 ]
 

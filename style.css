@@ -9,6 +9,10 @@
     list-style: none;
 }
 
+html{
+    scroll-behavior: smooth
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
 body{
@@ -104,7 +108,7 @@ section{
     width: 0;
     padding: 20px;
     height: 60vh;
-    background: #23163590;
+    background: #231635;
     color: #fff;
     transition: all 0.25s ease-in-out;
     transform: translateX(180%);
@@ -431,6 +435,7 @@ section{
     line-height: 26px;
     padding: 15px;
     text-align: center;
+    height: 150px;
 }
 .read-more{
     width: 165px;
@@ -543,6 +548,7 @@ section{
 
 .blog-text{
     font-size: 20px;
+    height: 225px;
     letter-spacing: 1.2px;
     line-height: 28px;
     color: #7c7c7c;
